@@ -1,8 +1,10 @@
 /*
 Sorting Time
-JavaScript has a beautiful built-in function sort that sorts an iterable, usually an array of numbers, sorting them in ascending order, but using a block you can sort the iterable in different ways.
+JavaScript has a beautiful built-in function sort that sorts an iterable, usually an array of numbers, sorting them in ascending order, 
+but using a block you can sort the iterable in different ways.
 
-    Create a function that takes an array of integers as an argument and returns the same array in ascending order. Using sort() would be easy, but for this challenge YOU have to sort the array creating your own algorithm.
+Create a function that takes an array of integers as an argument and returns the same array in ascending order. Using sort() would 
+be easy, but for this challenge YOU have to sort the array creating your own algorithm.
 
     Notes
     * The arrays can contain either positive or negative elements.
@@ -15,7 +17,10 @@ This is a challenge to enhance your ability, using the sort built-in won't enhan
 /*-----------=^.^=--- Implementing Insertion Sort algorithm ---=^.^=------------------*/
 
 /*
-This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. This algorithm has quadratic time complexity in the average and worst cases.
+This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. 
+Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. 
+It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. 
+This algorithm has quadratic time complexity in the average and worst cases.
 */
 
 function insertionSort(array) {
@@ -36,9 +41,14 @@ function insertionSort(array) {
 
 /*-----------=^.^=--- Implementing Quick Sort algorithm ---=^.^=------------------*/
 
-/*Quick sort is an efficient, recursive divide-and-conquer approach to sorting an array. In this method, a pivot value is chosen in the original array. The array is then partitioned into two subarrays of values less than and greater than the pivot value. We then combine the result of recursively calling the quick sort algorithm on both sub-arrays. This continues until the base case of an empty or single-item array is reached, which we return. The unwinding of the recursive calls return us the sorted array.
+/*Quick sort is an efficient, recursive divide-and-conquer approach to sorting an array. 
+In this method, a pivot value is chosen in the original array. The array is then partitioned into 
+two subarrays of values less than and greater than the pivot value. We then combine the result of recursively 
+calling the quick sort algorithm on both sub-arrays. This continues until the base case of an empty or single-item 
+array is reached, which we return. The unwinding of the recursive calls return us the sorted array.
 
-    Quick sort is a very efficient sorting method, providing O(nlog(n)) performance on average. It is also relatively easy to implement. These attributes make it a popular and useful sorting method.*/
+Quick sort is a very efficient sorting method, providing O(nlog(n)) performance on average. It is also relatively 
+easy to implement. These attributes make it a popular and useful sorting method.*/
 
 function quickSort(array) {
     if (array.length <= 1) return array;
